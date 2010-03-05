@@ -10,7 +10,10 @@ begin
     gem.email = "avdi@avdi.org"
     gem.homepage = "http://github.com/avdi/methodical"
     gem.authors = ["Avdi Grimm"]
+    gem.add_dependency "extlib", "~> 0.9.14"
+    gem.add_dependency "arrayfields", "~> 4.7"
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "mocha", "~> 0.9.8"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -22,6 +25,7 @@ require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
   spec.spec_files = FileList['spec/**/*_spec.rb']
+  spec.spec_files += FileList['test/**/*_test.rb']
 end
 
 Spec::Rake::SpecTask.new(:rcov) do |spec|
