@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "methodical"
     gem.summary = %Q{Automation framework for sequential operations}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{Sorry, no description yet}
     gem.email = "avdi@avdi.org"
     gem.homepage = "http://github.com/avdi/methodical"
     gem.authors = ["Avdi Grimm"]
